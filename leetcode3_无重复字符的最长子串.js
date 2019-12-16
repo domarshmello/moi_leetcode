@@ -26,6 +26,7 @@
 var lengthOfLongestSubstring = function(s) {
     const map={};
     let left =0;
+//     s.split(''):string ->array
      return s.split('').reduce((max, value, index) => {
         left = map[value] >= left ? map[value] + 1 : left;
         map[value] = index;
